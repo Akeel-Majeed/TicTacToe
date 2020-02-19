@@ -1,2 +1,2 @@
 # TicTacToe
-Tic Tac Toe GUI with pygame
+Tic Tac Toe GUI with pygame!
