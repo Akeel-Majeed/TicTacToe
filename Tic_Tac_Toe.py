@@ -124,16 +124,15 @@ class Player:
                     if tile.status == "not claimed":
                         if not player_one.win and not player_two.win:
                             if len(player_one.tiles_claimed) < player_one.max:
-                                    if len(player_one.tiles_claimed) < player_one.max:
-                                        if not player_one.has_gone:
-                                            screen.blit(player_one.image, tile.go_to_position)
-                                            player_one.tiles_claimed.append(i + 1)
-                                            tile.status = "claimed"
-                                            player_one.has_gone = True
-                                            player_two.has_gone = False
-                                        else:
-                                            pass
-                                            #pass - do nothing
+                                    if not player_one.has_gone:
+                                        screen.blit(player_one.image, tile.go_to_position)
+                                        player_one.tiles_claimed.append(i + 1)
+                                        tile.status = "claimed"
+                                        player_one.has_gone = True
+                                        player_two.has_gone = False
+                                    else:
+                                        pass
+                                        #pass - do nothing
                 else:
                     i += 1
 
@@ -144,16 +143,15 @@ class Player:
                     if tile.status == "not claimed":
                         if not player_one.win and not player_two.win:
                             if len(player_two.tiles_claimed) < player_two.max:
-                                if len(player_two.tiles_claimed) < player_two.max:
-                                    if not player_two.has_gone:
-                                        screen.blit(player_two.image, tile.go_to_position)
-                                        player_two.tiles_claimed.append(i + 1)
-                                        tile.status = "claimed"
-                                        player_two.has_gone = True
-                                        player_one.has_gone = False
-                                    else:
-                                        pass
-                                        #pass - do nothing
+                                if not player_two.has_gone:
+                                    screen.blit(player_two.image, tile.go_to_position)
+                                    player_two.tiles_claimed.append(i + 1)
+                                    tile.status = "claimed"
+                                    player_two.has_gone = True
+                                    player_one.has_gone = False
+                                else:
+                                    pass
+                                    #pass - do nothing
                 else:
                     i += 1
 
