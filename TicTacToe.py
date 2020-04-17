@@ -15,7 +15,7 @@ def main():
         screen = pygame.display.set_mode((500, 500))
         screen.fill((255, 255, 255))
         pygame.display.set_caption("Tic Tac Toe by Akeel Majeed")
-        logo = pygame.image.load('C:/Users/akeel/Downloads/circle.png')
+        logo = pygame.image.load('') # enter your image path here
         pygame.display.set_icon(logo)
 
     set_screen()
@@ -139,9 +139,10 @@ def main():
                     draw_line(LINE)
                     return True
             return False
-
-    player_one = Player(pygame.image.load('C:/Users/akeel/Downloads/circle.png'), True, 0) # 0 --> left click
-    player_two = Player(pygame.image.load('C:/Users/akeel/Downloads/cancel.png'), False, 2) # 2 --> right click
+        
+    # enter your image paths here
+    player_one = Player(pygame.image.load(''), True, 0) # 0 --> left click
+    player_two = Player(pygame.image.load(''), False, 2) # 2 --> right click
 
     def display(player):
         
